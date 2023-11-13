@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>University</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logo/LOGO.png" rel="icon" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"
+            ><span>123 456 789 </span></i
+          >
+          <i class="bi bi-envelope d-flex align-items-center ms-4"
+            ><a href="mailto:contact@example.com">info@email.com</a></i
+          >
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="#" class="logo">
+          <img src="assets/img/logo/LOGO.png" alt="logo.png" />
+        </a>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+            <li><a class="nav-link scrollto" href="#counts">Courses</a></li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#testimonials">Contact US</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <video id="video-background" autoplay muted loop>
+        <!-- Proporciona la ruta de tu video -->
+        <source src="assets/video/hero-video.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+      <div class="container h-100 mt-5">
+        <div class="row align-items-center h-100">
+          <div
+            class="col-lg-7 responsive-center"
+            data-aos="zoom-out"
+            data-aos-delay="100"
+          >
+            <h2>Welcome a the University</h2>
+            <div class="px-2">
+              <div class="flex-responsive">
+                <div class="out-line-border w-25"></div>
+              </div>
+              <h1>
+                We are an online <br />
+                platform to make learning
+              </h1>
+              <a href="#about" class="btn-primary scrollto">Get Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 mt-5 mt-lg-0">
+            <form role="form">
+              <div class="title-form-register">Register Now !</div>
+              <div class="p-4 mt-4">
+                <div class="row">
+                  <div class="col form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col form-group">
+                    <input
+                      type="text"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+
+                  <div class="col form-group">
+                    <input
+                      type="text"
+                      name="phone"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Phone"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <a href="#" class="btn-primary mt-0">Send</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Featured Services Section ======= -->
+      <section id="featured-services">
+        <div class="container responsive-center-flex" data-aos="fade-up">
+          <div class="mb-5 d-flex">
+            <div class="circle"></div>
+            <div>
+              <h2>The most popular</h2>
+              <div class="flex-responsive">
+                <div class="out-line-border w-75 mb-2"></div>
+              </div>
+              <h2 class="font-weight-bold">know what we offer you</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="px-4 col-md-6 col-lg-3">
+              <div
+                class="box-most-popular mt-4 mt-xxl-0"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="position-relative">
+                  <img
+                    class="image-most-popular"
+                    src="assets/img/most_popular/image1.jpg"
+                    alt="image1"
+                  />
+                  <div
+                    class="position-absolute fixed-bottom m-3 text-center w-25 bg-white rounded new"
+                  >
+                    new
+                  </div>
+                </div>
+                <h4 class="title text-center">
+                  Design for the web with adobe photoshop
+                </h4>
+
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="#" class="btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-4 col-md-6 col-lg-3">
+              <div
+                class="box-most-popular mt-4 mt-xxl-0"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  class="image-most-popular"
+                  src="assets/img/most_popular/image2.jpg"
+                  alt="image2"
+                />
+                <h4 class="title text-center">
+                  Design for the web with adobe photoshop
+                </h4>
+
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="#" class="btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-4 col-md-6 col-lg-3">
+              <div
+                class="box-most-popular mt-4 mt-xxl-0"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  class="image-most-popular"
+                  src="assets/img/most_popular/image3.jpg"
+                  alt="image3"
+                />
+                <h4 class="title text-center">
+                  Design for the web with adobe photoshop
+                </h4>
+
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="#" class="btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-4 col-md-6 col-lg-3">
+              <div
+                class="box-most-popular mt-4 mt-xxl-0"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  class="image-most-popular"
+                  src="assets/img/most_popular/image4.jpg"
+                  alt="image4"
+                />
+                <h4 class="title text-center">
+                  Design for the web with adobe photoshop
+                </h4>
+
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="#" class="btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-100 text-center mt-4">
+            <a href="#" class="btn-primary-outline">Viwe More</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Featured Services Section -->
+
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container responsive-center" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 pt-4 pt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="mb-5 d-flex responsive-center-flex-nc">
+                <div>
+                  <div class="circle"></div>
+                </div>
+                <div>
+                  <h2>About Us</h2>
+                  <div class="flex-responsive">
+                    <div class="out-line-border w-75 mb-2"></div>
+                  </div>
+                  <h2 class="font-weight-bold">
+                    know everything we do for you
+                  </h2>
+                </div>
+              </div>
+              <div class="mx-4">
+                <p>
+                  The university is a physical place, buildings, laboratories,
+                  libraries ... where students and teachers meet. The university
+                  is also a human-social system, that is, a ste of elements that
+                  are related and interact with each other. The university is
+                  also a human-social system, that is, a ste of elements that
+                  are related and interact with each other.
+                </p>
+
+                <a href="#" class="deskotp btn-primary">Read More</a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <img
+                src="assets/img/about/about_us.jpg"
+                class="image-about"
+                alt=""
+              />
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+              <a href="#" class="mobile btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+          <div class="row skills-content">
+            <div class="col-lg-3 col-6 skills-col">
+              <div class="circle-white">
+                <img
+                  src="assets/img/benefist/icono1.png"
+                  alt="icono1"
+                  width="80px"
+                />
+              </div>
+              <h2 class="font-weight-bold text-center">Excellent Content</h2>
+            </div>
+            <div class="col-lg-3 col-6 skills-col">
+              <div class="circle-white">
+                <img
+                  src="assets/img/benefist/icono2.png"
+                  alt="icono2"
+                  width="80px"
+                />
+              </div>
+              <h2 class="font-weight-bold text-center">Experts Instructors</h2>
+            </div>
+            <div class="col-lg-3 col-6 skills-col">
+              <div class="circle-white">
+                <img
+                  src="assets/img/benefist/icono3.png"
+                  alt="icono3"
+                  width="80px"
+                />
+              </div>
+              <h2 class="font-weight-bold text-center">
+                The Best Professionals
+              </h2>
+            </div>
+            <div class="col-lg-3 col-6 skills-col">
+              <div class="circle-white">
+                <img
+                  src="assets/img/benefist/icono4.png"
+                  alt="icono4"
+                  width="80px"
+                />
+              </div>
+              <h2 class="font-weight-bold text-center">Countless Courses</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="mb-5 d-flex responsive-center-flex-nc">
+            <div class="circle"></div>
+            <div>
+              <h2>Study Careers</h2>
+              <div class="flex-responsive">
+                <div class="out-line-border w-75 mb-2"></div>
+              </div>
+              <h2 class="font-weight-bold">
+                Explore the different careers we offer
+              </h2>
+            </div>
+          </div>
+
+          <div class="row responsive-center-flex px-4">
+            <!-- section 1 -->
+            <div class="col-12 col-lg-8 row">
+              <div class="col-lg-6 p-3">
+                <div class="image-study-main h-430">
+                  <img
+                    src="assets/img/study/image1.jpg"
+                    class="image-study"
+                    alt="image1"
+                  />
+                  <div class="study-content">
+                    <h3 class="font-weight-bold">Administration</h3>
+                    <a href="#" class="btn-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 p-3">
+                <div class="image-study-main h-430">
+                  <img
+                    src="assets/img/study/image2.jpg"
+                    class="image-study"
+                    alt="image2"
+                  />
+                  <div class="study-content">
+                    <h3 class="font-weight-bold">Accounting</h3>
+                    <a href="#" class="btn-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 p-3">
+                <div class="image-study-main h-200">
+                  <img
+                    src="assets/img/study/image3.jpg"
+                    class="image-study"
+                    alt="image3"
+                  />
+                  <div class="study-content">
+                    <h3 class="font-weight-bold">Architecture</h3>
+                    <a href="#" class="btn-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- section 2 -->
+            <div class="col-lg-4 row">
+              <div class="col-lg-12 p-3">
+                <div class="image-study-main h-200">
+                  <img
+                    src="assets/img/study/image4.jpg"
+                    class="image-study"
+                    alt="image4"
+                  />
+                  <div class="study-content">
+                    <h3 class="font-weight-bold">Mathematics</h3>
+                    <a href="#" class="btn-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 p-3">
+                <div class="image-study-main h-200">
+                  <img
+                    src="assets/img/study/image5.jpg"
+                    class="image-study"
+                    alt="image5"
+                  />
+                  <div class="study-content">
+                    <h3 class="font-weight-bold">Programming</h3>
+                    <a href="#" class="btn-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 p-3">
+                <div class="image-study-main h-200">
+                  <img
+                    src="assets/img/study/image6.jpg"
+                    class="image-study"
+                    alt="image6"
+                  />
+                  <div class="study-content">
+                    <h3 class="font-weight-bold">Biology</h3>
+                    <a href="#" class="btn-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <a href="#" class="btn-primary-outline">View More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="zoom-in">
+          <div class="mb-5 d-flex responsive-center-flex-nc">
+            <div class="circle"></div>
+            <div>
+              <h2>Our Team</h2>
+              <div class="flex-responsive">
+                <div class="out-line-border w-75 mb-2"></div>
+              </div>
+              <h2 class="font-weight-bold">Meet the best professionals</h2>
+            </div>
+          </div>
+
+          <div class="text-center hidden-revert">
+            <i class="bi bi-arrow-left" id="prevBtn"></i>
+            <i class="bi bi-arrow-right" id="nextBtn"></i>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-3 text-center p-4">
+              <div class="bg-white card-team">
+                <div class="image-team-main">
+                  <img
+                    src="assets/img/team/bg-team.jpg"
+                    class="image-team"
+                    alt="bg-team"
+                  />
+                </div>
+                <div class="content-team">
+                  <img
+                    src="assets/img/team/team1.jpg"
+                    class="image-person"
+                    alt="team1"
+                  />
+
+                  <h3 class="p-0 m-0 mt-4">John Smith</h3>
+                  <h3 class="primary p-0 m-0">Math Teacher</h3>
+
+                  <a href="#" class="btn-primary-outline mb-4">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3 text-center p-4">
+              <div class="bg-white card-team">
+                <div class="image-team-main">
+                  <img
+                    src="assets/img/team/bg-team.jpg"
+                    class="image-team"
+                    alt="bg-team"
+                  />
+                </div>
+                <div class="content-team">
+                  <img
+                    src="assets/img/team/team2.jpg"
+                    class="image-person"
+                    alt="team2"
+                  />
+
+                  <h3 class="p-0 m-0 mt-4">Dave Morgan</h3>
+                  <h3 class="primary p-0 m-0">Math Teacher</h3>
+
+                  <a href="#" class="btn-primary-outline mb-4">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3 text-center p-4">
+              <div class="bg-white card-team">
+                <div class="image-team-main">
+                  <img
+                    src="assets/img/team/bg-team.jpg"
+                    class="image-team"
+                    alt="bg-team"
+                  />
+                </div>
+                <div class="content-team">
+                  <img
+                    src="assets/img/team/team3.jpg"
+                    class="image-person"
+                    alt="team3"
+                  />
+
+                  <h3 class="p-0 m-0 mt-4">Zara Smith</h3>
+                  <h3 class="primary p-0 m-0">Biology Teacher</h3>
+
+                  <a href="#" class="btn-primary-outline mb-4">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3 text-center p-4">
+              <div class="bg-white card-team">
+                <div class="image-team-main">
+                  <img
+                    src="assets/img/team/bg-team.jpg"
+                    class="image-team"
+                    alt="bg-team"
+                  />
+                </div>
+                <div class="content-team">
+                  <img
+                    src="assets/img/team/team4.jpg"
+                    class="image-person"
+                    alt="team4"
+                  />
+
+                  <h3 class="p-0 m-0 mt-4">Jimena Soto</h3>
+                  <h3 class="primary p-0 m-0">Math Teacher</h3>
+
+                  <a href="#" class="btn-primary-outline mb-4">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3 text-center p-4 hidden">
+              <div class="bg-white card-team">
+                <div class="image-team-main">
+                  <img
+                    src="assets/img/team/bg-team.jpg"
+                    class="image-team"
+                    alt="bg-team"
+                  />
+                </div>
+                <div class="content-team">
+                  <img
+                    src="assets/img/team/team5.jpg"
+                    class="image-person"
+                    alt="team5"
+                  />
+
+                  <h3 class="p-0 m-0 mt-4">Joe Smith</h3>
+                  <h3 class="primary p-0 m-0">Biology Teacher</h3>
+
+                  <a href="#" class="btn-primary-outline mb-4">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn-primary">View More</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Team Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="fade-up">
+          <div class="main-reviews row">
+            <div
+              class="col-12 col-lg-6 d-flex flex-column text-center justify-content-center align-items-center testimonial-content"
+            >
+              <span class="font-weight-bold font-size-10"
+                >VIEW TESTIMONIALS</span
+              >
+              <h1 class="font-weight-bold">
+                FOR US IT IS VERY <br />
+                IMPORTANT TO <br />
+                KNOW THE <br />
+                OPINION OF OUR <br />
+                CLIENTS
+              </h1>
+            </div>
+            <div
+              class="testimonials-slider swiper col-12 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="swiper-wrapper mb-4 mb-lg-0 mt-4 mt-lg-0">
+                <div class="swiper-slide">
+                  <div
+                    class="w-100 d-flex flex-column justify-content-center align-items-center p-0 m-0 review-item"
+                  >
+                    <div class="video-reviews">
+                      <video controls class="video">
+                        <source
+                          src="assets/video/review.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="review-content">
+                      <span>JEFF FRESHMAN</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div
+                    class="w-100 d-flex flex-column justify-content-center align-items-center p-0 m-0 review-item"
+                  >
+                    <div class="video-reviews">
+                      <video controls class="video">
+                        <source
+                          src="assets/video/hero-video.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="review-content">
+                      <span>CARL VITE</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div
+                    class="w-100 d-flex flex-column justify-content-center align-items-center p-0 m-0 review-item"
+                  >
+                    <div class="video-reviews">
+                      <video controls class="video">
+                        <source
+                          src="assets/video/review.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="review-content">
+                      <span>JULY FRESHMAN</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div
+                    class="w-100 d-flex flex-column justify-content-center align-items-center p-0 m-0 review-item"
+                  >
+                    <div class="video-reviews">
+                      <video controls class="video">
+                        <source
+                          src="assets/video/hero-video.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="review-content">
+                      <span>DAN WHITE</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div
+                    class="w-100 d-flex flex-column justify-content-center align-items-center p-0 m-0 review-item"
+                  >
+                    <div class="video-reviews">
+                      <video controls class="video">
+                        <source
+                          src="assets/video/review.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="review-content">
+                      <span>SAUL GOODMAN</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row pt-5">
+            <div
+              class="col-lg-3 col-md-6 footer-contact d-flex justify-content-center align-items-center"
+            >
+              <a href="#">
+                <img
+                  src="assets/img/logo/LOGO.png"
+                  alt="logo.png"
+                  class="footer-logo"
+                />
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links responsive-center mt-3">
+              <h5 class="primary font-weight-bold">Quick Links</h5>
+              <div class="footer-content d-flex flex-column">
+                <a href="#about">About Us</a>
+                <a href="#counts">Courses</a>
+                <a href="#team">Team</a>
+                <a href="#testimonials">Contact Us</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links responsive-center mt-3">
+              <h5 class="primary font-weight-bold">Contact Info</h5>
+              <div class="footer-content d-flex flex-column">
+                <a href="tel:123456789" target="_blank"
+                  ><i class="bi bi-phone"></i> 123 456 789</a
+                >
+                <a href="mailto:info@gmail.com" target="_blank"
+                  ><i class="bi bi-envelope"></i> info@gmail.com</a
+                >
+                <a
+                  href="https://www.google.com/maps/place/Estados+Unidos/@41.6521595,-96.9730772,5.72z/data=!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891!16zL20vMDljN3cw?entry=ttu"
+                  target="_blank"
+                  ><i class="bi bi-pin-map"></i> adress, United States</a
+                >
+                <a href="#">
+                  <div>
+                    <a href="https://www.youtube.com/" target="_blank"
+                      ><i class="bi bi-youtube mx-2"></i
+                    ></a>
+                    <a href="https://www.instagram.com/" target="_blank"
+                      ><i class="bi bi-instagram mx-2"></i
+                    ></a>
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><i class="bi bi-facebook mx-2"></i
+                    ></a>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 responsive-center mt-3">
+              <h5 class="primary font-weight-bold">NewsLetter</h5>
+              <span>Recive all our promotions and notifications</span>
+              <div class="footer-content d-flex flex-column align-items-center">
+                <div class="d-flex footer-form">
+                  <input type="text" class="footer-input" />
+                  <button>Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-4">
+        <hr />
+        <div class="row">
+          <div class="col-12 col-lg-10 responsive-center">
+            <div class="copyright">&copy; Copyright. All Rights Reserved</div>
+            <div class="credits">
+              This Website Was Designed And Developed by
+              <a href="https://github.com/DanielEnGitHub" target="_blank"
+                >Daniel Gallina</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-2 text-center">
+            <a href="https://josesilvera.com/" target="_blank">
+              <img
+                src="assets/img/logo_enterprise.png"
+                alt="logo_enterprise"
+                width="100px"
+              />
+            </a>
+            <div class="mt-1">Technical test</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
