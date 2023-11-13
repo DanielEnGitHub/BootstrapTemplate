@@ -221,52 +221,72 @@
       mirror: false,
     });
   });
-
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
 })();
 
-document.addEventListener("DOMContentLoaded", function () {
-  var currentIndex = 0;
-  var canClickNext = true; // Estado inicial
+document.addEventListener("DOMContentLoaded", () => {
+  let currentIndex = 0;
+  let teamMembers;
+  let nextActive = true;
+  let prevActive = false;
 
-  function toggleTeamMembers() {
-    var teamMembers = document.querySelectorAll(".col-12.col-lg-3");
-    teamMembers.forEach(function (member, index) {
-      if (index >= currentIndex && index < currentIndex + 4) {
-        member.classList.remove("hidden");
-      } else {
-        member.classList.add("hidden");
-      }
-    });
-  }
+  const determineVisibleItems = () => (window.innerWidth < 768 ? 1 : 4);
 
-  document.getElementById("nextBtn").addEventListener("click", function () {
-    if (canClickNext) {
-      if (currentIndex < 2) {
-        currentIndex++;
-      } else {
-        currentIndex = 0;
-      }
+  const mobile = window.innerWidth < 768;
+
+  const toggleTeamMembers = () => {
+    const numVisibleItems = determineVisibleItems();
+    teamMembers.forEach((member, index) =>
+      member.classList.toggle(
+        "hidden",
+        index < currentIndex || index >= currentIndex + numVisibleItems
+      )
+    );
+  };
+
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    if (!mobile && nextActive) {
+      currentIndex = (currentIndex + 1) % teamMembers.length;
       toggleTeamMembers();
-      canClickNext = false; // Desactivar el clic en Next
+      nextActive = false;
+      prevActive = true;
+    } else if (mobile) {
+      currentIndex = (currentIndex + 1) % teamMembers.length;
+      toggleTeamMembers();
     }
   });
 
-  document.getElementById("prevBtn").addEventListener("click", function () {
-    if (!canClickNext) {
-      if (currentIndex > 0) {
-        currentIndex--;
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    const numVisibleItems = determineVisibleItems();
+
+    if (!mobile && prevActive) {
+      if (currentIndex === 0) {
+        currentIndex = teamMembers.length - numVisibleItems;
       } else {
-        currentIndex = 2;
+        currentIndex =
+          (currentIndex - 1 + teamMembers.length) % teamMembers.length;
       }
       toggleTeamMembers();
-      canClickNext = true; // Desactivar el clic en Prev
+      prevActive = false;
+      nextActive = true;
+    } else if (mobile) {
+      if (currentIndex === 0) {
+        currentIndex = teamMembers.length - numVisibleItems;
+      } else {
+        currentIndex =
+          (currentIndex - 1 + teamMembers.length) % teamMembers.length;
+      }
+      toggleTeamMembers();
     }
   });
+
+  const updateVisibility = () => {
+    teamMembers = document.querySelectorAll(".col-12.col-lg-3");
+    toggleTeamMembers();
+  };
 
   // Initial toggle
-  toggleTeamMembers();
+  updateVisibility();
+
+  // Update visibility on window resize
+  window.addEventListener("resize", updateVisibility);
 });
